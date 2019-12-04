@@ -6,6 +6,11 @@ import click
 @click.option("--concurrency", "-c", default=1, help="Number of concurrent requests")
 @click.option("--json-file", "-j", default=None, help="Path to output JSON file")
 @click.argument("url")
+# @click.option('--name', prompt='Your name', help='The person to greet.')
+
+# def hello(name):
+#     click.echo('Hello %s' % name)
+
 def cli(requests, concurrency, json_file, url):
     print(f"Requests: {requests}")
     print(f"Concurrency: {concurrency}")
